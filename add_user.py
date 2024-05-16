@@ -17,13 +17,13 @@ def add_new_vehicle(owner_name, vehicle_number, model, color, latitude, longitud
 
     conn.close()
 
-new_owner_name = "Code of Duty"
+new_owner_name = "Gojo"
 new_vehicle_number = "XYZ456"
-new_model = "Toyota Corolla"
-new_color = "Blue"
-new_latitude = 40.7128  # Example latitude
-new_longitude = -74.0060  # Example longitude
-new_emergency_contact_1 = "1234567890"
-new_emergency_contact_2 = "0987654321"
+new_model = "Renault Kwid"
+new_color = "Yellow"
+new_latitude = 00.00000  # Example latitude
+new_longitude = 00.0000  # Example longitude
+new_emergency_contact_1 = "99999944444"
+new_emergency_contact_2 = "2002002002"
 
 add_new_vehicle(new_owner_name, new_vehicle_number, new_model, new_color, new_latitude, new_longitude, new_emergency_contact_1, new_emergency_contact_2)
