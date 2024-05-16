@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS vehicle_details;
+
+
+USE vehicle_details;
+
+
+CREATE TABLE IF NOT EXISTS Vehicles (
+    VehicleID INTEGER PRIMARY KEY AUTOINCREMENT,
+    OwnerName VARCHAR(100) NOT NULL,
+    VehicleNumber VARCHAR(20) NOT NULL,
+    VehicleModel VARCHAR(50) NOT NULL,
+    VehicleColor VARCHAR(20),
+    Longitude DECIMAL(9,6) DEFAULT 0.0,
+    Latitude DECIMAL(9,6) DEFAULT 0.0
+);
