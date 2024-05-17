@@ -4,13 +4,20 @@ This repository contains Python scripts and HTML files for managing vehicle deta
 Features:
 Add New Vehicle: Add details of a new vehicle to the database.
 Update Vehicle Coordinates: Update the coordinates (latitude and longitude) of a vehicle.
-Generate Random Coordinates: Generate random coordinates for a vehicle.
+Add new Hospital : Adds a new Hospital along with its details to the database.
+Add new Police Station : Adds a new Police Station along with its details to the database.
+Add new Tow Company: Adds a new Tow Company along with its details to the database.
+Generate Random Coordinates: Generate random coordinates for a vehicle for current simulation and sends it to the hospital, police station and the emergency contact receivers.
+As the Hospital, Police Station and Emergency Contact endpoint APIs need Proxy servers to be connected, we have created sample pages of how the notification on the Hospital device is going to be.
 SQLite Database Integration: Utilizes SQLite database for storing vehicle details.
 Files:
-add_vehicle.py: Python script to add a new vehicle to the database.
-update_coordinates.py: Python script to update the coordinates of a vehicle.
-generate_coordinates.py: Python script to generate random coordinates for a vehicle.
-vehicle_details.db: SQLite database file containing vehicle details.
+create_db.py : Creates the various databases required
+add_hospital : Adds the new Hospital details
+add_police_station : Adds a new police station details
+add_tow_truck: Adds the new tow truck details
+add_user: adds the new user details
+backend.py: A temporary backend framework created to display the modus operandi. It cannot be implemented as we require a proper Proxy Messaging Service
+gps_updater.py : Generates a randomg gps coordinate and simulates sample web pages which are created to represent the format of notification the emergency services are goig to receive.
 Usage:
 Ensure you have Python installed.
 Install the required dependencies using pip install sqlite3.
